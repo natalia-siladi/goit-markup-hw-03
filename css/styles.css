@@ -56,6 +56,10 @@ body {
 }
 
 /*header*/
+.page-header {  
+border-bottom: 1px solid #ECECEC;
+}
+
 
 .logo {
     display: flex;
@@ -301,8 +305,10 @@ align-items: center;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    margin-top: 20px;
     margin-bottom: 9px;
+}
+.address-box {
+    margin-top: 20px;
 }
 
 .contacts {
@@ -321,6 +327,10 @@ align-items: center;
     color: var(--accent-text-colour); 
 }
 /*portfolio*/
+.portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .filtr {
     background-color: rgba(245, 244, 250, 1);
@@ -331,20 +341,34 @@ align-items: center;
     text-align: center; 
     cursor: pointer;
     font-family: inherit;
+    border: rgba(245, 244, 250, 1);
 }
 
 .filtr:hover,
-.filtr:focus { 
+.filtr:focus,
+.filtr:active { 
     background-color:var(--accent-text-colour); 
     color:  var(--object-colour);
-    
+    border: var(--object-colour); 
 }
+.filtr-btns {
+  display: flex;  
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filtr-btns .item + .item {
+    margin-left: 9px;
+}
+
+
+
+ 
  /* projects*/
  .projects {
     display: flex; 
     flex-wrap: wrap;
-    margin-top: -20px;
-    margin-left: -20px;
+    margin-top: -30px;
+    margin-left: -30px;
  }
  .projects > .item {
      flex-basis: calc(100% / 3 - 30px);
@@ -363,7 +387,11 @@ align-items: center;
     font-size: 16px;
     line-height: 1.87;
  }
-
+.project-contant {
+    padding:20px 24px;
+   background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
 
   
 
